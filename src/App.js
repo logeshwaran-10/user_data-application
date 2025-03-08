@@ -6,7 +6,6 @@ import { Layout } from "antd";
 import { Link } from "react-router";
 
 //CSS
-import "./App.css";
 import "./style/style.scss";
 
 //Component
