@@ -1,0 +1,96 @@
+.app-layout {
+  background: #f6f8fc;
+  .app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    .header-left {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .app-name {
+        background: linear-gradient(135deg, #e06c9f, #4c9fd6);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .app-body {
+    padding: 0px 20px 20px 20px;
+    .user-container {
+      min-height: 87vh;
+      .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        position: sticky;
+        top: 64px;
+        background: #f6f8fc;
+        z-index: 3;
+
+        .search {
+          width: 400px;
+          min-width: 100px;
+        }
+      }
+    }
+    .no-data {
+      height: 87vh;
+      div {
+        height: calc(100% - 100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .search-bar {
+    .ant-input {
+      width: 200px !important;
+    }
+  }
+}
+
+.user-card {
+  .ant-card-cover {
+    height: 200px;
+    img {
+      height: inherit;
+    }
+  }
+  .ant-card-body {
+    margin-top: 10px;
+  }
+}
+.icon {
+  padding: 10px 40px;
+}
+
+.liked, .like {
+  color: red;
+}
+
+.delete:hover {
+  color: red;
+}
+
+.text-primary {
+  color: #337ab7;
+}
